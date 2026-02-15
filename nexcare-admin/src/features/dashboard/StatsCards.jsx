@@ -46,8 +46,8 @@ export function StatsCards() {
               <Icon size={24} />
             </div>
             <div>
-              <p className="text-sm text-gray-500 font-medium">{stat.label}</p>
-              <h3 className="text-2xl font-bold text-gray-800 mt-1">{stat.value}</h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">{stat.label}</p>
+              <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mt-1">{stat.value}</h3>
             </div>
           </Card>
         );

@@ -3,34 +3,59 @@ export const db = {
     id: "user_1",
     name: "Admin",
     email: "admin@nexcare.com",
-    avatar: "https://ui-avatars.com/api/?name=Admin&background=9333ea&color=fff",
-    role: "admin"
+    avatar:
+      "https://ui-avatars.com/api/?name=Admin&background=9333ea&color=fff",
+    role: "admin",
   },
   stats: [
-    { label: "RFO Pending", value: 152, icon: "Clock", color: "bg-yellow-100 text-yellow-800", iconColor: "#eab308" },
-    { label: "RFO Terbuat", value: 287, icon: "CheckCircle", color: "bg-green-100 text-green-800", iconColor: "#22c55e" },
-    { label: "Starlink Aktif", value: 54, icon: "Satellite", color: "bg-purple-100 text-purple-800", iconColor: "#9333ea" },
-    { label: "Starlink Suspend", value: 37, icon: "Ban", color: "bg-red-100 text-red-800", iconColor: "#ef4444" }
+    {
+      label: "RFO Pending",
+      value: 152,
+      icon: "Clock",
+      color: "bg-yellow-100 text-yellow-800",
+      iconColor: "#eab308",
+    },
+    {
+      label: "RFO Terbuat",
+      value: 287,
+      icon: "CheckCircle",
+      color: "bg-green-100 text-green-800",
+      iconColor: "#22c55e",
+    },
+    {
+      label: "Starlink Aktif",
+      value: 54,
+      icon: "Satellite",
+      color: "bg-purple-100 text-purple-800",
+      iconColor: "#9333ea",
+    },
+    {
+      label: "Starlink Suspend",
+      value: 37,
+      icon: "Ban",
+      color: "bg-red-100 text-red-800",
+      iconColor: "#ef4444",
+    },
   ],
   charts: {
     rfoStats: [
       { name: "Pending RFO", value: 150, fill: "#8b5cf6" },
       { name: "Completed RFO", value: 280, fill: "#a78bfa" },
       { name: "Starlink Aktif", value: 400, fill: "#c4b5fd" },
-      { name: "Starlink Suspend", value: 180, fill: "#e879f9" }
+      { name: "Starlink Suspend", value: 180, fill: "#e879f9" },
     ],
     starlinkStatus: [
       { name: "Aktif", value: 59, fill: "#7c3aed" },
-      { name: "Suspend", value: 41, fill: "#f472b6" }
-    ]
+      { name: "Suspend", value: 41, fill: "#f472b6" },
+    ],
   },
   rfoData: [
-    { 
-      id: "RFO001582", 
-      status: "Pending", 
+    {
+      id: "RFO001582",
+      status: "Pending",
       clientId: "IW72831",
       clientName: "Astra Communications",
-      starlink: "Starlink87415", 
+      starlink: "Starlink87415",
       location: "Jakarta, Indonesia",
       projectName: "Astra Connectivity Upgrade",
       incidentDate: "3 Februari 2026",
@@ -40,18 +65,19 @@ export const db = {
       incidentCategory: "NORMAL",
       durationInterruption: "1 Hour",
       statusTicket: "OPEN",
-      incidentDescription: "Intermittent connectivity issues observed during peak hours.",
+      incidentDescription:
+        "Intermittent connectivity issues observed during peak hours.",
       businessImpact: "Slow access to internal tools for 50 users.",
       rootCause: "High latency detected at the gateway.",
       action: "Restarted terminal and recalibrated signal.",
-      createdBy: "Admin User"
+      createdBy: "Admin User",
     },
-    { 
-      id: "RFO001583", 
-      status: "Accept", 
+    {
+      id: "RFO001583",
+      status: "Accept",
       clientId: "IW99210",
       clientName: "Omega Networks",
-      starlink: "Starlink96321", 
+      starlink: "Starlink96321",
       location: "Bandung, Indonesia",
       projectName: "Omega Backhaul",
       incidentDate: "2 Februari 2026",
@@ -61,18 +87,19 @@ export const db = {
       incidentCategory: "HARD",
       durationInterruption: "2.5 Hours",
       statusTicket: "CLOSE",
-      incidentDescription: "Complete signal loss due to severe weather conditions.",
+      incidentDescription:
+        "Complete signal loss due to severe weather conditions.",
       businessImpact: "Total outage for branch office.",
       rootCause: "Heavy obstructions and thunderstorm.",
       action: "Waited for weather to clear; verified stability.",
-      createdBy: "Admin User"
+      createdBy: "NOC1",
     },
-    { 
-      id: "RFO001584", 
-      status: "Accept", 
+    {
+      id: "RFO001584",
+      status: "Accept",
       clientId: "IW12093",
       clientName: "SkyConnect Ltd.",
-      starlink: "Starlink70358", 
+      starlink: "Starlink70358",
       location: "Surabaya, Indonesia",
       projectName: "SkyConnect Offshore",
       incidentDate: "1 Februari 2026",
@@ -86,14 +113,14 @@ export const db = {
       businessImpact: "Minimal impact, few retries on transactions.",
       rootCause: "Software update reboot.",
       action: "Monitored post-update stability.",
-      createdBy: "Admin User"
+      createdBy: "Technical Support",
     },
-    { 
-      id: "RFO001581", 
-      status: "Accept", 
+    {
+      id: "RFO001581",
+      status: "Accept",
       clientId: "IW44211",
       clientName: "NovaTel Solutions",
-      starlink: "Starlink75192", 
+      starlink: "Starlink75192",
       location: "Bali, Indonesia",
       projectName: "NovaTel Resort Wifi",
       incidentDate: "30 Januari 2026",
@@ -107,14 +134,14 @@ export const db = {
       businessImpact: "Guest complaints regarding video streaming.",
       rootCause: "Bandwidth saturation.",
       action: "Applied QoS policies and increased priority.",
-      createdBy: "Admin User"
+      createdBy: "Admin User",
     },
-    { 
-      id: "RFO001571", 
-      status: "Pending", 
+    {
+      id: "RFO001571",
+      status: "Pending",
       clientId: "IW33201",
       clientName: "Radiotel Telecom",
-      starlink: "Starlink16234", 
+      starlink: "Starlink16234",
       location: "Medan, Indonesia",
       projectName: "Radiotel Backup Link",
       incidentDate: "28 Januari 2026",
@@ -128,8 +155,8 @@ export const db = {
       businessImpact: "Backup link activation failover test.",
       rootCause: "Power cut at site.",
       action: "Dispatched technician to check UPS.",
-      createdBy: "Admin User"
-    }
+      createdBy: "Admin User",
+    },
   ],
   starlinkData: [
     {
@@ -140,7 +167,7 @@ export const db = {
       passwordEmail: "emailpass123",
       status: "Active",
       optStatus: "Active",
-      optQuota: "300MB"
+      optQuota: "300MB",
     },
     {
       id: "ACC-8821092-11029-2",
@@ -150,7 +177,7 @@ export const db = {
       passwordEmail: "bdgPass!@#",
       status: "Active",
       optStatus: "Disable",
-      optQuota: "-"
+      optQuota: "-",
     },
     {
       id: "ACC-9920192-22910-1",
@@ -160,7 +187,7 @@ export const db = {
       passwordEmail: "mailPassSby",
       status: "Suspend",
       optStatus: "Disable",
-      optQuota: "-"
+      optQuota: "-",
     },
     {
       id: "ACC-1029384-55610-9",
@@ -170,7 +197,7 @@ export const db = {
       passwordEmail: "resortMailPass",
       status: "Active",
       optStatus: "Active",
-      optQuota: "1GB"
+      optQuota: "1GB",
     },
     {
       id: "ACC-7721029-33102-5",
@@ -180,8 +207,8 @@ export const db = {
       passwordEmail: "medanMailKey",
       status: "Active",
       optStatus: "Active",
-      optQuota: "500MB"
-    }
+      optQuota: "500MB",
+    },
   ],
   clientData: [
     {
@@ -194,7 +221,7 @@ export const db = {
       vendorCid: "CID-99201",
       vendorBandwidth: "100Mbps",
       installPhone: "081234567890",
-      installName: "Budi Santoso"
+      installName: "Budi Santoso",
     },
     {
       id: "IW99210",
@@ -206,7 +233,7 @@ export const db = {
       vendorCid: "CID-55102",
       vendorBandwidth: "50Mbps",
       installPhone: "081987654321",
-      installName: "Agus Pratama"
+      installName: "Agus Pratama",
     },
     {
       id: "IW12093",
@@ -218,7 +245,7 @@ export const db = {
       vendorCid: "CID-77291",
       vendorBandwidth: "200Mbps",
       installPhone: "081298765432",
-      installName: "Cahyo Nugroho"
+      installName: "Cahyo Nugroho",
     },
     {
       id: "IW44211",
@@ -230,7 +257,7 @@ export const db = {
       vendorCid: "CID-33102",
       vendorBandwidth: "50Mbps",
       installPhone: "081345678901",
-      installName: "Wayan Surya"
+      installName: "Wayan Surya",
     },
     {
       id: "IW33201",
@@ -242,8 +269,8 @@ export const db = {
       vendorCid: "CID-11029",
       vendorBandwidth: "20Mbps",
       installPhone: "081567890123",
-      installName: "Rizky Siregar"
-    }
+      installName: "Rizky Siregar",
+    },
   ],
   teamData: [
     {
@@ -252,8 +279,10 @@ export const db = {
       email: "admin@nexcare.com",
       password: "adminPassword123",
       position: "NOC2",
-      signature: "https://ui-avatars.com/api/?name=Admin+User&background=random",
-      profilePicture: "https://ui-avatars.com/api/?name=Admin+User&background=0D8ABC&color=fff"
+      signature:
+        "https://ui-avatars.com/api/?name=Admin+User&background=random",
+      profilePicture:
+        "https://ui-avatars.com/api/?name=Admin+User&background=0D8ABC&color=fff",
     },
     {
       id: "USR002",
@@ -262,7 +291,8 @@ export const db = {
       password: "noc1Password",
       position: "NOC1",
       signature: "https://ui-avatars.com/api/?name=NOC+One&background=random",
-      profilePicture: "https://ui-avatars.com/api/?name=NOC+One&background=random"
+      profilePicture:
+        "https://ui-avatars.com/api/?name=NOC+One&background=random",
     },
     {
       id: "USR003",
@@ -270,8 +300,10 @@ export const db = {
       email: "tech@nexcare.com",
       password: "techPassword",
       position: "Technical Support",
-      signature: "https://ui-avatars.com/api/?name=Tech+Support&background=random",
-      profilePicture: "https://ui-avatars.com/api/?name=Tech+Support&background=random"
+      signature:
+        "https://ui-avatars.com/api/?name=Tech+Support&background=random",
+      profilePicture:
+        "https://ui-avatars.com/api/?name=Tech+Support&background=random",
     },
     {
       id: "USR004",
@@ -279,8 +311,10 @@ export const db = {
       email: "manager@nexcare.com",
       password: "managerPass",
       position: "NOC2",
-      signature: "https://ui-avatars.com/api/?name=Manager+NOC&background=random",
-      profilePicture: "https://ui-avatars.com/api/?name=Manager+NOC&background=random"
-    }
-  ]
+      signature:
+        "https://ui-avatars.com/api/?name=Manager+NOC&background=random",
+      profilePicture:
+        "https://ui-avatars.com/api/?name=Manager+NOC&background=random",
+    },
+  ],
 };
